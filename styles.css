@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: hidden;
+  min-height: 100vh;
+  display: flex;
+}
+
+#left {
+  display: flex;
+  width: 24vw;
+  background-image: url(images/trees.jpeg);
+  background-repeat: no-repeat;
+  background-size: 130%;
+}
+
+#right {
+  width: 40vw;
+}
+
+.buffer {
+  width: 18vw;
+  background-color: black;
+}
