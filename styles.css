@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Norse-Bold";
+  src: url(./fonts/Norse-Bold.otf) format("opentype");
+}
+
 body {
   overflow-y: hidden;
   min-height: 100vh;
@@ -17,7 +22,43 @@ body {
   width: 24vw;
   background-image: url(images/trees.jpeg);
   background-repeat: no-repeat;
-  background-size: 130%;
+  background-size: cover;
+  position: relative;
+}
+
+.odin-text {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  text-align: center;
+  font-family: "Norse-Bold";
+  top: 200px;
+  width: 100%;
+  height: 120px;
+  line-height: 120px;
+  font-size: 4.2rem;
+}
+
+footer {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.odin-text::before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  height: 1.6em;
+  width: 1.2em;
+  top: -10px;
+  vertical-align: middle;
+  background: no-repeat url(images/odin-lined.png);
+  background-size: cover;
 }
 
 #right {
