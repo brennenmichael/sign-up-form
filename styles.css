@@ -173,11 +173,11 @@ label {
 }
 
 .error {
-  border: 1px solid red;
+  border: 1px solid #c00;
 }
 
 .error-message {
-  color: red;
+  color: #c00;
   font-size: 0.75rem;
   padding: 2px;
 }
