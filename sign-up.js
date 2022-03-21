@@ -6,13 +6,9 @@ const password = document.getElementById("password");
 const confirmPassword = document.getElementById("confirm-password");
 const errorMessage = document.querySelector(".error-message");
 
-if (password) console.log("TRUE");
-
 password.addEventListener("input", (e) => {
   // Each time the user types something, we check if the
   // form fields are valid.
-  console.log("TRUE");
-  if (password.value) console.log(password.value);
 
   if (password.value === confirmPassword.value) {
     // In case there is an error message visible, if the field
