@@ -48,7 +48,12 @@
         <div class="password-info">
           <section>
             <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="error"
+            />
           </section>
           <section>
             <label for="confirm-password">CONFIRM PASSWORD</label>
@@ -56,8 +61,10 @@
               type="password"
               name="confirm-password"
               id="confirm-password"
+              class="error"
             />
           </section>
+          <div class="error-message">*Passwords do not match.</div>
         </div>
       </form>
       <div class="account-options">
